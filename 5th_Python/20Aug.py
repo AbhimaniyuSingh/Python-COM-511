@@ -85,3 +85,31 @@ for i in range (1,5):
   if i not in list:
       print("Missing element is : ",i)
 
+# PRACTICE PROBLEMS
+
+# 1. Write a Python program to determine whether a student is eligible for a scholarship.
+
+''' The scholarship should be granted if the student satisfies either of the following conditions.
+    a. The student has a CGPA of 8.5 or above the attendance of 85 percent or above.
+    b. The student has won a national level competiton.
+    
+    The program should take CGPA, attendance percentage, and national-level competition status as input
+    then display whether the student is eligible for the scholarship.
+    
+    2. Write a Python program to simulate a digital lock system.
+    
+       The lock should ask the user to enter a 4 digit PIN. If the entered PIN does not conatin exactly
+       4 digits, the program should display an error message and ask again. If the entered PIN is correct,
+       the lock should open. Otherwise, the program should ask the user to try again.'''
+
+a = float(input("Enter the CGPA: "))
+b = float(input("Enter the attendance: "))
+c = input("Enter the level status (Yes/No): ")
+
+if a > 8.5 and b >= 85:
+    if c == "Yes":
+        print("Student is eligible")
+    else:
+        print("Not Eligible")
+else:
+    print("Not Eligible")
