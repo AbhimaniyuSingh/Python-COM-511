@@ -4,6 +4,6 @@ marks = []
 for i in range(10):
     mark = int(input(f"Enter marks for student {i + 1}: "))
     if 0 <= mark <= 100:
-        marks.append(mark)
+        marks.append(marks)
 
-print("Valid marks:", marks)
+print("VALID MARKS IS ",marks)
