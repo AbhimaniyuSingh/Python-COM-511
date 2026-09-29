@@ -1,9 +1,8 @@
 # WRITE A PYTHON PROGRAM TO STORE TWO POINTS AS TUPLES AND CALCULATE THE DISTANCE BETWEEN THEM.
-import math
+x1 = int(input("Enter x-coordinate of point 1: "))
+y1 = int(input("Enter y-coordinate of point 1: "))
+x2 = int(input("Enter x-coordinate of point 2: "))
+y2 = int(input("Enter y-coordinate of point 2: "))
 
-
-point1 =  input("Enter coordinates of first point (x y): ").split()
-point2 =  input("Enter coordinates of second point (x y): ").split()
-
-distance = math.hypot(float(point2[0]) - float(point1[0]), float(point2[1]) - float(point1[1]))
+distance = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
 print("Distance between the points:", distance)
